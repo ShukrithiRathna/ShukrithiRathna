@@ -1,4 +1,4 @@
-<img src="Shukrithi_cover.png" alt="drawing" width="600" height = "400"/>
+<img src="Shukrithi_cover.png" alt="" width="600" height = "400"/>
 
 ### Hi there, I'm Shukrithi Rathna!
 <!--
