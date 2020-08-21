@@ -1,7 +1,8 @@
-<img src="Shukrithi_cover.png" alt="" width="600" height = "400"/>
+
 
 ### Hi there, I'm Shukrithi Rathna!
 <!--
+<img src="Shukrithi_cover.png" alt="" width="600" height = "400"/>
 **ShukrithiRathna/ShukrithiRathna** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
 
