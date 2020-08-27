@@ -10,7 +10,7 @@
 - 🌱 I’m currently learning HCI, Web-Dev, Data Science and SEO
 - ⚡ Fun fact: ...I love coffee! ☕
 
-Checkout my website - ___
+Checkout my website -  https://shukrithirathna.github.io/ShukrithiRathna/
 
 My Stats...
 
