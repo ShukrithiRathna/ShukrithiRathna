@@ -2,35 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shukrithi's portfolio</title>
     <link rel=" stylesheet" href="styles.css" > 
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
     <script src="https://kit.fontawesome.com/82953f4c3a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         
         <div class="nav_bar">
-           <div class="left_col_nav">
-               <div class="link_nav_bar">
-                   <a href="index.html">Home</a>
-               </div>
-               <div class="link_nav_bar">
-                   <a href="about.html">About</a>
-               </div>
-           </div>
-           <!-- <div class="right_col_nav">
+            <div class="left_col_nav">
                 <div class="link_nav_bar">
-                    <a href="ShukrithiRathna_Resume_Updated(Aug'20).pdf" target="_blank"></a>>Resume</a>
+                   <a href="#home">Home</a>
                 </div>
-           </div> -->
+                <div class="link_nav_bar">
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+                <div class="link_nav_bar">
+                   <a href="#about">About</a>
+                </div>
+            </div>
+            <div class="right_col_nav">
+                <div class="link_contacts_bar">
+                    <a href="https://github.com/ShukrithiRathna"><i class="fab fa-github-square fa-2x"></i></a>
+                    <!-- <span><i class="fas fa-code fa-2x"></i></a></span> -->
+                    <a href="https://www.linkedin.com/in/shukrithi-rathna/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+            </div>
         </div>
         
-        <div class="title_wrapper">
-            <h1 class="name_bar">Shukrithi Rathna</h1>
-            
-            <p class="subtitle_bar">Data Scientist - Developer - Content Writer</p>
-            
+        <section id ="title_wrapper">
+            <a name="home"></a> 
+            <!-- <section id = "profile_wrapper" ></sectionid> -->
+            <div class="profile_wrapper">
+
+                <div class="name_wrapper">
+                    
+                    <h1 class="name_bar">Shukrithi Rathna </h1>
+                    <!-- <h1 class="name_bar_last">Rathna</h1> -->
+                </div>
+                <div class="subtitle_bar">
+                    <p>Data Scientist - Developer - Content Writer </p>
+                    <!-- <p>Developer</p>  -->
+                    <!-- <p>Content Writer</p>   -->
+                    
+                    <!-- <span></span> -->
+                </div>
+            </div>    
+        <!-- </section> -->
             
             <!-- <hr style="width:100%;text-align:left;margin-left:20px;margin-right:50px"> -->
             <div class="divider-custom divider-light">
@@ -38,26 +61,20 @@
                 <div class="divider-custom-icon"><i class="fas fa-circle-notch"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
-        </div>
+            <div class="button_wrap">
+                <a href="#portfolio" type="button" class="cta">Portfolio</a>
+            </div>
+        </section   >
 
-        <div class="title_wrapper_2">
-            <h1 class="name_bar_2">Portfolio</h1>
-            
-            <!-- <p class="subtitle_bar">Data Scientist - Developer - Content Writer</p> -->
-            
-            
-            <!-- <hr style="width:100%;text-align:left;margin-left:20px;margin-right:50px"> -->
-            <!-- <div class="divider-custom divider-light">
-                <div class="divider-custom-line_2"></div>
-                <div class="divider-custom-icon"><i class="fas fa-circle-notch"></i></div> 
-                <div class="divider-custom-line_2"></div>
-            </div> -->
-        </div> 
         
-            
+        
         <!-- Everything below nav bar  -->
-         <div class="content_bar">
-             <!-- all the projects -->
+        <div class="content_bar">
+            <!-- all the projects -->
+            <a name="portfolio"></a> 
+                <div class="title_wrapper_2">
+                    <h1 class="name_bar_2">Portfolio</h1>
+                </div> 
              <div class="portfolio_items">
                  
                 <!-- Each individual project -->
@@ -69,16 +86,16 @@
                     <!-- For the text inside the image  -->
                     <div class="image_text_wrapper">
 
-                        <!-- <div class="logo_wrapper">
-                            <img src="images/logo.jpg">       
-                        </div> -->
-
                         <div class="subtitle">
                             <div class="placehold">
-                                tempname
+                                tempn
                             </div>
-                            <a href="https://github.com/ShukrithiRathna/SongRecommender" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="about.html" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            <div class="short_intro">
+                                <h3>Music Recommendation System</h3>
+                                <p>Popularity based music recommender (item-based & user-based collaborative filtering). Popularity trend predictions using ML.</p>
+                                <a href="https://github.com/ShukrithiRathna/SongRecommender" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                                <a href="about.html" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            </div>
 
                         </div>
                         <!-- <div class="project_name">
@@ -103,8 +120,13 @@
                             <div class="placehold">
                                 tempname
                             </div>
-                            <a href="https://github.com/ShukrithiRathna/peak-tracker" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="https://peak-tracker.herokuapp.com/" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            <div class="short_intro">
+                                <h3>Peak Tracker</h3>
+                                <p>Mini application (dashboard) that displays various stats related to
+                                peak tracking of sensor data using Python.</p>
+                                <a href="https://github.com/ShukrithiRathna/peak-tracker" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                                <a href="https://peak-tracker.herokuapp.com/" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            </div>
                         </div>
 
                     </div> 
@@ -126,8 +148,12 @@
                             <div class="placehold">
                                 Temp name
                             </div>
-                            <a href="https://github.com/ShukrithiRathna/Log_Monitor" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="about.html" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            <div class="short_intro">
+                                <h3>Log File Monitoring</h3>
+                                <p>This utility helps you monitor the most important log files and gain insight on server performance, security, error messages and underlying issues.</p>
+                                <a href="https://github.com/ShukrithiRathna/Log_Monitor" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                                <a href="about.html" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            </div>
                         </div>
                         
                         <div class="view_options">
@@ -153,8 +179,12 @@
                             <div class="placehold">
                                 Temp name
                             </div>
-                            <a href="https://github.com/ShukrithiRathna/BreakOut" target="_blank"><i class="fab fa-github fa-3x"></i></a>
-                            <a href="https://shukrithirathna.github.io/BreakOut/" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            <div class="short_intro">
+                                <h3>BreakOut</h3>
+                                <p>This is a desktop version of the popular Android Game Breakout. </p>    
+                                <a href="https://github.com/ShukrithiRathna/BreakOut" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                                <a href="https://shukrithirathna.github.io/BreakOut/" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            </div>
                         </div>
                     </div> 
                     <!-- <h3>Test</h3>     -->
@@ -176,8 +206,13 @@
                             <div class="placehold">
                                 Temp name32
                             </div>
+                            <!-- <h1>dfgsdfgdfgsdfgsdfgsfgf</h1> -->
+                            <div class="short_intro">
+                                <h3>UI Design - Medical Software </h3>
+                                <p>Wireframe for software used in the medical industry; interface that improves functionality, usability accessibility.</p>
+                                <a href="https://xd.adobe.com/view/722fd87c-894e-46d3-4e4c-84de5703aef4-041e/" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
+                            </div>
                             <!-- <a href="index.html"><i class="fab fa-github fa-3x"></i></a> -->
-                            <a href="https://xd.adobe.com/view/722fd87c-894e-46d3-4e4c-84de5703aef4-041e/" target="_blank"><i class="fas fa-eye fa-3x"></i></a>
                         </div>
 
                     </div> 
@@ -201,7 +236,12 @@
                             <div class="placehold">
                                 Temp name32
                             </div>
-                            <a href="https://github.com/ShukrithiRathna/StatsPackage_BigData" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                            <div class="short_intro">
+                                <h3> Analytic and Descriptive Stats Package</h3>
+                                <p>EDA, descriptive analytics, predictive analytics with focus on Frequent Item-set Mining, ML
+                                    algorithms (Classification, Clustering).</p>
+                                <a href="https://github.com/ShukrithiRathna/StatsPackage_BigData" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                            </div>
                             <!-- <a href="about.html"><i class="fas fa-eye fa-3x"></i></a> -->
                         </div>
 
@@ -210,8 +250,31 @@
 
              
             </div>
-         </div>
+        </div>
+        <section id ="title_wrapper">
+            <a name="about"></a> 
+            <!-- <section id = "profile_wrapper" ></sectionid> -->
+            <div class="profile_wrapper">
 
+                <div class="name_wrapper">
+                    
+                    <h1 class="name_bar">About Me </h1>
+                    <!-- <h1 class="name_bar_last">Rathna</h1> -->
+                </div>
+                <div class="subtitle_bar">
+                    <p> Passionate data scientist, developer, AI enthusiast and content writer. Keen on making data driven, positive
+                        changes to technology and society. I aim to design clean, usable and aesthetically
+                        pleasing computer interfaces, accessible to everyone. </p>
+                    <!-- <p>Developer</p>  -->
+                    <!-- <p>Content Writer</p>   -->
+                    
+                    <!-- <span></span> -->
+                </div>
+            </div>    
+            <div class="button_wrap_2">
+                <a href="ShukrithiRathna_Resume_Updated(Aug'20).pdf" type="button" class="cta" targer="__blank">Download Resume</a>
+            </div>
+        </section>
     </div>
 </body>
 <!-- JS code shouldn't run before entire page has loaded. Hence bottom of the page  -->
@@ -227,7 +290,7 @@
 
             // background image has index 3 
             // console.log(projectSquare.childNodes[3].classList);
-            projectSquare.childNodes[3].classList.add('image_darken');
+            projectSquare.childNodes[3].classList.add('image_darken');  
 
 
         })
