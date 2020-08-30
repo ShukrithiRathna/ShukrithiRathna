@@ -1,0 +1,226 @@
+﻿html,body {
+	height: 100%;
+	width: 100%;
+	font-family:'Actor';
+
+}
+
+.navbar {
+	/* background-color: #24305e; */
+	/* border-bottom: 5px solid  #24305e; */
+	background-color: black;
+	border-bottom: 5px solid  black;
+	font-size: 15px;
+
+}
+
+.navbar-brand {
+	min-height: 25px;
+	padding: 0 15px 5 px;
+	color: #feffff;
+} 
+
+.navbar-default .navbar-nav li a {
+	color: #feffff;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
+	color: white;
+	/* border-bottom: 1px solid white; */
+}
+
+#home {
+	background: -moz-linear-gradient(top, #F76C95 0%, #FB6767 50%, #FF9162 100%);
+    background: -webkit-linear-gradient(top, #F76C95 0%, #FB6767 50%, #FF9162 100%);
+    background: linear-gradient(to bottom, #F76C95 0%, #FB6767 50%, #FF9162 100%); 
+	/* background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4); */
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.landing-text h1 {
+	font-size: 400%;
+	font-weight: 500;
+	color: #feffff;
+}
+
+.btn {
+	background-color: transparent;
+	border-color: black ;
+}
+
+
+.padding {
+	padding: 80px ;
+}
+
+.padding img {
+	width: 100%;
+}
+
+#fixed {
+	background: url(img/image_scroll.png) no-repeat center center fixed;
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	/* opacity: 0.9%; */
+	
+}
+
+
+.text-center {
+	text-align: center;
+	/* font-size: 300%; */
+	/* font-weight: 300; */
+	padding-bottom: 30px;
+	/* text-transform: uppercase; */
+  }
+
+.row {
+	padding-bottom: 30px;
+}
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: white;
+  }
+  
+.col-lg-4:hover .overlay ,.col-lg-4:active .overlay{
+	opacity: 1;
+}
+
+
+.centered {
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+#about {
+	background: -moz-linear-gradient(top, #F76C95 0%, #FB6767 50%, #FF9162 100%);
+    background: -webkit-linear-gradient(top, #F76C95 0%, #FB6767 50%, #FF9162 100%);
+    background: linear-gradient(to bottom, #F76C95 0%, #FB6767 50%, #FF9162 100%);  
+	display: table;
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	padding-top: 50px;
+}
+
+.row p {
+	font-size: large;
+	font-weight: 100px;
+}
+
+.col-12 p{
+	padding-left: 300px;
+	padding-right: 300px;
+	padding-bottom: 50px;
+	text-align: justify;
+}
+
+hr{
+
+	height: 2px;
+	background-color: black;
+	border: none;
+	width: 50%;
+	/* padding-left: 500px; */
+
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: black;
+	/* padding: 5% 5% 10% 5%; */
+	/* top right bottom left  */
+	color: #feffff;
+	position: fixed;
+    height: 50px;
+    /* background-color: red; */
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+}
+
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: #feffff;
+}
+
+.fa:hover {
+	color: white;
+	text-decoration: none;
+
+}
+
+.fa-github-square {
+	color:#feffff;
+	padding-right: 10px;
+	padding-bottom: 12px;
+
+}
+  
+.fa-linkedin {
+	color:#feffff;
+}
+
+.overlay .fab, .overlay .fas  {
+	color: black;
+
+}
+
+.fab:hover, .fas:hover {
+	opacity: 0.5;
+}
+
+@media (max-width:768px) {
+	.landing-text h1 {
+		font-size: 200%;
+	}
+	.padding img {
+		padding-bottom: 20px;
+	}
+	/* .display-4 {
+		font-size: smaller;
+	} */
+	.col-12 {
+		padding-left: 100px;
+	}
+}
