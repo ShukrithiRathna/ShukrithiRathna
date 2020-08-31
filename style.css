@@ -2,12 +2,11 @@
 	height: 100%;
 	width: 100%;
 	font-family:'Actor';
+	margin: 0;
 
 }
 
 .navbar {
-	/* background-color: #24305e; */
-	/* border-bottom: 5px solid  #24305e; */
 	background-color: black;
 	border-bottom: 5px solid  black;
 	font-size: 15px;
@@ -27,14 +26,12 @@
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active {
 	color: white;
-	/* border-bottom: 1px solid white; */
 }
 
 #home {
 	background: -moz-linear-gradient(top, #F76C95 0%, #FB6767 50%, #FF9162 100%);
     background: -webkit-linear-gradient(top, #F76C95 0%, #FB6767 50%, #FF9162 100%);
     background: linear-gradient(to bottom, #F76C95 0%, #FB6767 50%, #FF9162 100%); 
-	/* background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4); */
 	display: table;
 	height: 100%;
 	position: relative;
@@ -57,11 +54,13 @@
 
 .landing-text img {
 	align-self: center;
-	/* padding-left: 2rem; */
 }
+
 .btn {
 	background-color: transparent;
 	border-color: black ;
+	border-width: 1px;
+
 }
 
 
@@ -80,14 +79,9 @@
 	position: relative;
 	width: 100%;
 	background-size: cover;
-	/* opacity: 0.9%; */
-	
+		
 }
 
-
-.row {
-	padding-bottom: 30px;
-}
 
 
 .overlay {
@@ -103,7 +97,7 @@
 	background-color: white;
   }
   
-.col-lg-4:hover .overlay ,.col-lg-4:active .overlay{
+.col-sm-4:hover .overlay ,.col-sm-4:active .overlay{
 	opacity: 1;
 }
 
@@ -135,15 +129,11 @@
 .welcome {
 	width: 85%;
 	margin: 0 auto;
-	/* padding-top: 2rem; */
-	/* padding-left: 5rem; */
-	/* text-align: justify; */
+	
 }
 
 .col-lg-6 p{
 	padding-top: 6rem;
-	/* padding-left: 300px; */
-	/* padding-right: 5rem; */
 	padding-bottom: 3rem;
 	font-size: large;
 	font-weight: 100px;
@@ -151,15 +141,7 @@
 	margin: 0;
 }
 
-hr{
 
-	height: 2px;
-	background-color: black;
-	border: none;
-	width: 50%;
-	/* padding-left: 500px; */
-
-}
 
 footer {
 	display: flex;
@@ -220,11 +202,32 @@ footer {
 	.padding img {
 		padding-bottom: 20px;
 	}
-	.col-lg-6 {
-		/* padding-top: 3rem; */
-	}
-	/* .display-4 {
-		font-size: smaller;
-	} */
 	
+	
+}
+
+.jumbotron {
+	border-radius: 0;
+	padding: 3rem 0 2rem;
+}
+
+h3.heading {
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 1.9rem;
+	text-align: center;
+
+}
+
+.heading-underline {
+	width: 5rem;
+	height: 0.2rem;
+	background-color: black;
+	margin: 0 auto 2rem;	 
+}
+
+
+.row.no-padding [class*=col-] {
+	padding: 0;
 }
